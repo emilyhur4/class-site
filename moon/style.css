@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* means that paddings and borders are included in height and width values*/
+}
+
+.inclusive-sans-regular {
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .inclusive-sans-regular-italic {
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }  
+
+.kalnia {
+  font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+#opener {
+    width: 100%; /*you could also say vw*/
+    height: 100vh; /* vh stands for viewport height, width is easier for the browser to figure out*/
+    background-image: url(images/stars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    /* background-repeat: repeat y, x */
+}
+
+.quote {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1000;
+    width: 60%;
+}
+
+h2 {
+    color: white;
+    font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 360;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 40px;
+}
+
+h3 {
+    color: white;
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.redmoon {
+    background-image: url(images/moon-red.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    background-size: 600px; /* can use cover, or also contain (background-cover, background-contain)*/
+    position: absolute;
+    left: -100px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+.bluemoon {
+    background-image: url(images/moon-blue.png);
+    height: 800px;
+    width: 800px;
+    background-size: contain;
+    position: absolute;
+    right: -200px;
+    top: -100px;
+}
+
+.graymoon {
+    background-image: url(images/moon-bw.png);
+    height: 400px;
+    width: 400px;
+    background-size: contain;
+    position: absolute;
+    right: -50px;
+    bottom: -60px;
+}
+
+.column { 
+    width: 33%;
+    margin: 100px 50px 100px 50px;
+}
+
+li {
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    border-bottom: 1px dotted gray;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+h4 {
+    font-family: "Kalnia", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "wdth" 100;
+  color: rgb(255, 255, 149);
+  margin-bottom: 40px;
+}
+
+.flex-area {
+    display: flex;
+    flex-direction: row;
+    background-image: url(images/galaxy.jpg);
+    background-size: cover;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    font-size: 13px;
+    color: rgb(168, 168, 168);
+    text-transform: uppercase;
+    display: block; /* default is inline*/
+    margin-top: 5px;
+}
+
+iframe {
+    margin: 100px 50px 100px 50px;
+}
+
+#video-section {
+    background-image: none;
+    background-color: black;
+}
