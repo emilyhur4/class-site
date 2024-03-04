@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* means that paddings and borders are included in height and width values*/
+}
+
+
+#opener {
+    width: 100%; /*you could also say vw*/
+    height: 100vh; /* vh stands for viewport height, width is easier for the browser to figure out*/
+    background-image: url(images/widelandscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    /* background-repeat: repeat y, x */
+}
+
+.quote {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1000;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+
+    
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-style: bold;
+    padding-top: 20px; 
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 40px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "wdth" 100;
+  color: rgb(255, 255, 149);
+  margin-bottom: 40px;
+}
+
+.flex-area {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgb(175, 224, 175);
+
+}
+
+span {
+    font-size: 13px;
+    color: rgb(16, 108, 74);
+    text-transform: uppercase;
+    display: block; /* default is inline*/
+    margin-top: 5px;
+}
+
+iframe {
+    margin: 100px 50px 100px 50px;
+}
+
+.first {
+    background-color:rgba(235, 189, 218, 0.854);
+    position: absolute;
+    left: 30px;
+    bottom: -550px;
+    z-index: 99;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 25%;
+}
+
+.second {
+    background-color:rgba(255, 194, 115, 0.671);
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    position: absolute;
+    left: 170px;
+    bottom: -400px; 
+    padding: 20px 20px 20px 20px;
+    width: 20%;   
+}
+
+.third {
+    background-color: rgba(218, 215, 63, 0.68);
+    position: absolute;
+    left: 440px;
+    bottom: -500px;
+    z-index: 19;
+    padding: 20px 20px 20px 20px;
+    font-family:'Courier New', Courier, monospace;
+    width: 25%;
+}
+
+ul {
+    list-style-type: none;
+    font-size: medium;
+}
+
+.column { 
+    width: 100%;
+    margin: 100px 50px 100px 50px;
+    font-size:40px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.quote {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1000;
+    width: 60%;
+}
