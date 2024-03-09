@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 214);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    /*
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 80px;
+    */
+    margin: 10px 80px 20px 50px;
+    padding: 30px 60px 30px 60px;
+    color: black;
+    /*
+    padding-top: 30 px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    */
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+
+}
+
+.title {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    height: 900px;
+    width: 900px;
+    margin: 0 auto 0 auto;
+    position: relative;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px auto 20px auto;
+    width: 400px;
+    /*text-align: center;*/
+}
+
+.first {
+    background-color:rgba(156, 215, 156, 0.559);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 99;
+
+}
+
+.second {
+    background-color:rgba(255, 194, 115, 0.671);
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    position: absolute;
+    left: 100px;
+    top: 240px;    
+}
+
+.third {
+    background-color: rgba(199, 134, 199, 0.561);
+    position: absolute;
+    left: 200px;
+    bottom: 300px;
+    z-index: 19;
+}
+
+.fourth {
+    background-color: rgba(198, 235, 125, 0.641);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    position: absolute;
+    bottom: 160px;
+    right: 0px;
+
+}
+
+.pic1 {
+    width: 320px;
+    height:auto;
+    left: 50px;
+    position: absolute;
+    bottom: 100px;
+}
+
+.pic2 {
+    width: 380px;
+    height: auto;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+
