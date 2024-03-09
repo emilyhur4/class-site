@@ -208,6 +208,177 @@ grid row start / grid column start / grid row end / grid column end
     text-shadow: 1px 1px black;
 }
 
+/* POEM SECTION */
+#poem-section {
+    background-color: black;
+    padding: 300px 0;
+    background-image: url(images/moon-blue.png);
+    background-position: top left;
+}
+.text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.text h2 {
+    font-size: 42px;
+}
+.text h3 {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.text p {
+    color: white;
+    font-family: "Inclusive Sans", sans-serif;
+    font-size: 28px;
+    line-height: 1.7;
+}
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    margin: 0 10px 0 10px;
+    transition: all 1s;
+}
+.circle:hover {
+    background-color: blue;
+    cursor:crosshair;
+    width: 100px;
+}
+.word {
+    opacity: 0;
+    transition: all 1s;
+    padding-left: 20px;
+    color: yellow;
+}
+.circle:hover .word {
+    opacity: 1;
+}
+.laugh {
+    display: inline-block;
+    background-color: green;
+    color: yellow;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 2s;
+}
+.laugh:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.call {
+    display: inline-block;
+    background-color: purple;
+    color: pink;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 20px;
+    transition: all 1s;
+}
+.call:hover {
+    transform: translate(100px,0) scale(3,3);
+    opacity: 0.2;
+}
+.hid {
+    display: inline-block;
+    background-color: pink;
+    color: blue;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 1s;
+}
+.hid:hover {
+    cursor: pointer;
+    background-color: purple;
+    transform: translate(-50px,0) scale(50%,50%);
+    opacity: 0.1;
+}
+.button {
+    display: block;
+    width: 250px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: "Inclusive Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    box-shadow: 3px 3px gray;
+}
+.button:hover {
+    color: gray;
+    transform: translate(2px,2px);
+    box-shadow: 1px 1px gray;
+}
+#animated-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/stars.jpg);
+    background-size: cover;
+    animation: movestars 300s infinite;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes movestars {
+0% {background-position: 0 0;}
+100% {background-position: 10000px 0;}
+}
+.moon1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: movemoon 10s infinite alternate;
+    z-index: 90;
+}
+@keyframes movemoon {
+    0% {top: 0; left: 0;}
+    50% {top: 500px;}
+    100% {left: 1000px;}
+}
+.moon2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: rotatemoon 5s infinite alternate;
+    z-index: 80;
+}
+@keyframes rotatemoon {
+    0% {
+        transform:rotate(0deg);
+        bottom: 0;
+        right: 0;
+        opacity: 1;
+    }
+    50% {
+        bottom: 10%;
+        right: 50%;
+    }
+    100% {
+        transform:rotate(360deg);
+        bottom: 90%;
+        right: 90%;
+        opacity: 0.2;
+    }
+}
+.moon3 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: movemoon 20s 5s infinite alternate;
+    /* animation property: name duration delay iteration-count direction */
+}
+
 /* HEADER */
 header {
     width: 100%;
