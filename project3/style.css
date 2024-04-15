@@ -154,28 +154,7 @@ header h2 a {
     
 }
 
-
-#scene5 {
-    background-color: black; 
     
-    .title {
-        color: rgb(255, 255, 255); 
-        text-align: center; 
-        font-family: 'Courier New', Courier, monospace; 
-        font-weight: 300px; 
-        padding-top: 200px;
-    }
-
-    .image5 { 
-       position: relative; 
-       scale: 25%;
-       left: -435px; 
-       top: -1350px;  
-    }
-
-    
-}
-
 #scene6 {
     background-color: black; 
     
@@ -231,7 +210,7 @@ header h2 a {
 
     .image8 { 
        position: relative; 
-       scale: 30%;
+       scale: 30%; 
        left: -391px; 
        top: -3400px;  
     }
