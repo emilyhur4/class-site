@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#background-image-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/home-background.jpg); /* Assuming this is your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent solid black color */
+    z-index: -1; /* Ensure the background image stays behind other content */
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    z-index: 1; /* Ensure the text appears above the background image */
+}
+
+#title h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+#title h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.overlay-image-home {
+    position: fixed;
+    bottom: 20px; /* Adjust this value to position the overlay image from the bottom */
+    right: 20px; /* Adjust this value to position the overlay image from the right */
+    width: 300px; /* Adjust this value to set the width of the overlay image */
+    height: auto; /* Adjust this value to set the height of the overlay image */
+    z-index: 1; /* Ensure the overlay image appears above the background image */
+}
+
+.overlay-image-home:hover {
+    content: url(images/start2.png);
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* page 1 */ 
+.background-image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 300px; 
+    padding-right: 300px;
+   
+}
+
+.overlay-image-1 {
+    position: absolute;
+    height: 480px; 
+    width: 210px; 
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.overlay-image-1:hover {
+    content: url("images/door2.png"); 
+}
+
+.overlay-image {
+    position: absolute; 
+    height: 150px;
+    width: 300px; 
+    top: 55%; 
+    left: 38%; 
+}
+
+.overlay-image:hover {
+    content: url("images/start2.png"); 
+}
+/* page 2 */ 
+
+.background-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 0px; 
+    padding-left: 200px; 
+    padding-right: 200px;
+
+}
+
+.overlay-image-2 {
+    position: absolute;
+    height: 150px; 
+    width: 300px; 
+    top: 50%;
+    right: 8%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.overlay-image-2:hover {
+    content: url("images/right-2.png");
+}
+
+.overlay-image-2a {
+    position: absolute;
+    height: 150px; 
+    width: 300px; 
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.overlay-image-2a:hover {
+    content: url("images/left-2.png"); 
+}
+
+
+
+/* page 3 */
+.background-image3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-left: 370px; 
+    padding-right: 370px;
+
+}
+
+.overlay-image-3 {
+    position: absolute;
+    height: 140px; 
+    width: 240px; 
+    top: 32%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.overlay-image-3:hover {
+    content: url("images/indicator-2.png"); 
+}
+
+/* page 4 */
+
+.background-image4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-position: center;
+    padding-top: 5px;
+    padding-bottom: 10px; 
+    padding-left: 370px; 
+    padding-right: 370px;
+
+}
+
+.overlay-image-4 {
+    position: absolute;
+    height: 170px; 
+    width: 300px; 
+    top: 18%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+}
+
+.overlay-image-4:hover {
+    content: url("images/book-2.png"); 
+}
+
+/* page 5 */
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/backgroundslideshow1.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+
+}
+
+.slideshow-container {
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 47%; 
+    overflow: hidden;
+    z-index: 1; 
+}
+
+
+
+/* page 6 */
+#page6 {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container-2 {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 90%; /* Scale down to 90% of the screen width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    min-width: 720px; /* Set minimum width */
+    min-height: 540px; /* Set minimum height */
+    max-width: 1080px; /* Set maximum width */
+    max-height: 810px; /* Set maximum height */
+    margin: auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow */
+    z-index: 1; /* Ensure the slideshow appears above other content */
+}
+
+.slide {
+    display: none; 
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block; /* Display the active slide */
+}
+
+#navigation {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 9999; 
+}
+
+#nav-img {
+    width: 200px; 
+    height: auto;
+    cursor: pointer; 
+}
+
+#nav-img:hover {
+    content: url("images/next2.png");  /* Adjusted to use background image */
+}
+
+.overlay-image-6 {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 9999; 
+    width: 300px; 
+    height: auto; 
+}
+
+.overlay-image-6:hover {
+    content: url("images/home2.png");
+}
+
+
+
+/* Page-specific styles */
+#page1 .image-container {
+    width: 800px; 
+    height: 1000px;
+}
+
+#page2 .image-container {
+    width: 1000px; 
+    height: 800px;
+}
+
+#page3 .image-container {
+    width: 1000px; 
+    height: 800px; 
+}
+
+#page4 .image-container {
+    width: 1000px; 
+    height: 800px; 
+}
+
